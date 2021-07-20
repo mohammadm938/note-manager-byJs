@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "vazirNormal";
+  src: url("../fonts/vazir.eot");
+  src: url("../fonts/vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/vazir.woff2") format("woff2"),
+    url("../fonts/vazir.woff") format("woff"),
+    url("../fonts/vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "KalamehWeb";
+  src: url(../fonts/KalamehWeb/woff/KalamehWeb_Bold.woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "KalamehWeb";
+  src: url(../fonts/KalamehWeb/woff/KalamehWeb_Black.woff);
+  font-weight: 700;
+}

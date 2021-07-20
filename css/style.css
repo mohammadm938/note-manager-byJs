@@ -1,0 +1,193 @@
+@import "reset.css";
+@import "font.css";
+* {
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/Screenshot\ from\ 2021-07-19\ 19-20-59.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-family: "vazirNormal";
+}
+
+/* Header */
+
+.header {
+  margin: auto;
+  width: 30%;
+  text-align: center;
+}
+.header-box {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+.header-note {
+  background-color: rgba(82, 92, 65, 0.37);
+  color: #fff;
+  border: 2px solid rgb(107, 107, 67);
+  /* box-shadow: #000 0px 0px 22px 2px; */
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 50px;
+
+  border-radius: 6px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "KalamehWeb";
+}
+
+/* Header right for add note */
+
+.add-note-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.add-note-box a {
+  background-color: rgba(82, 92, 65, 0.37);
+  color: #fff;
+  border: 2px solid rgb(139, 139, 64);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 50px;
+
+  border-radius: 6px;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "KalamehWeb";
+  transition: 0.5s;
+}
+.add-note-box a:hover {
+  cursor: pointer;
+  background-color: rgb(107, 107, 67);
+  transition: 0.5s;
+}
+
+/* Box */
+.note-holder {
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+.note-box {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: auto;
+  padding: 14px;
+  line-height: 30px;
+  /* background-color: #726b6b; */
+  /* background-color: hsla(210,30%,3.9%,1); background-image: radial-gradient(at 83% 46%, hsla(220, 85.9%, 13.9%, 0.41) 0, transparent 50%),radial-gradient(at 58% 57%, hsla(330, 41.9%, 35.1%, 0.41) 0, transparent 50%),radial-gradient(at 52% 3%, hsla(279, 87.7%, 32%, 0.43) 0, transparent 50%),radial-gradient(at 34% 47%, hsla(214, 12.1%, 25.9%, 0.41) 0, transparent 50%),radial-gradient(at 26% 98%, hsla(157, 67.5%, 24.1%, 0.44) 0, transparent 50%),radial-gradient(at 17% 42%, hsla(213, 67.4%, 18%, 0.46) 0, transparent 50%),radial-gradient(at 27% 81%, hsla(297, 52.7%, 29%, 0.43) 0, transparent 50%),radial-gradient(at 2% 6%, hsla(177, 92.9%, 11%, 0.45) 0, transparent 50%); */
+  background-color: rgba(82, 92, 65, 0.212);
+  color: #fff;
+  border: 2px solid rgb(107, 107, 67);
+  border-radius: 6px;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  transition: 0.5s;
+}
+.note-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 40px;
+  transition: 0.5s;
+}
+.note-place {
+  height: 280px;
+  overflow: auto;
+}
+.note-place {
+  scrollbar-base-color: red;
+}
+.note {
+  font-size: 20px;
+}
+
+/* Box footer */
+
+.footer {
+  position: absolute;
+  right: 40%;
+  text-align: center;
+}
+.footer a {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgba(155, 88, 88, 0.541);
+  border-radius: 50%;
+  padding: 7px 10px;
+  transition: 0.5s;
+}
+.footer a:hover {
+  box-shadow: red 0px 0px 20px -6px;
+  transition: 0.5s;
+}
+
+/* Form */
+.section-b {
+  display: none;
+}
+.add-note-form {
+  transition: 0.8s;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  width: 40%;
+  height: 400px;
+  margin: auto;
+  z-index: 99;
+  text-align: center;
+  padding: 14px;
+  border: 3px solid rgb(107, 107, 67);
+  border-radius: 6px;
+  background-color: rgba(82, 92, 65, 0.212);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 50px;
+}
+label,
+textarea,
+input {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-family: "KalamehWeb";
+}
+.form-holder {
+  height: 100%;
+}
+#form {
+  position: relative;
+}
+textarea {
+  margin: auto;
+  margin-top: 10px;
+  width: 80%;
+  height: 240px;
+  border-radius: 8px;
+  padding: 10px;
+  color: #000;
+  font-family: "vazirNormal";
+  font-size: 16px;
+  overflow: hidden;
+}
+textarea:focus {
+  outline: none;
+}
+input {
+  margin: auto;
+  margin-top: 20px;
+  padding: 6px 16px;
+  border: #f0f0f0 solid 2px;
+  border-radius: 6px;
+  background-color: rgba(82, 92, 65, 0.212);
+  border: 2px solid rgb(107, 107, 67);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 50px;
+  transition: 0.5s;
+}
+input:hover {
+  cursor: pointer;
+  background-color: rgb(107, 107, 67);
+  transition: 0.5s;
+}
